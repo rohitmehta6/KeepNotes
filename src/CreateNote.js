@@ -3,7 +3,6 @@ import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
-import SearchIcon from '@material-ui/icons/Search';
 import logo from './logo.png'
 
 
@@ -94,10 +93,13 @@ const CreateNote = () => {
         <>
         <div>
         <div className="header">
+          <div className="left-header">
             <img src={logo} alt="logo"/>
             <h1 className="header_text">Keep Notes</h1>
+          </div>
+          <div className="right-header">
             <input type="text" className="search" onChange={searchItem} value={search} placeholder="Search" autoComplete="off"/>
-           <SearchIcon className="searchIcon"></SearchIcon>
+          </div>
         </div>
         <div className="inputs">
 
