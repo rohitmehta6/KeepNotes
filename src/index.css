@@ -45,7 +45,8 @@ html {
   width: 80%;
   font-size: 18px;
   padding: 4px 8px;
-  border: none;
+  border: 2px solid grey;
+  border-radius: 10px;
   outline: none;
 }
 
@@ -169,11 +170,23 @@ p {
 @media only screen and (max-width: 607px) {
   .inputs .title,
   .inputs textarea {
-    width: 60%;
+    min-width: 80%;
+    font-size: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .search {
+    min-width: 100%;
+    margin-right: 10%;
   }
 
   .add_btn {
-    width: 24.2%;
+    min-width: 32%;
   }
 
   .all_notes {
@@ -181,20 +194,21 @@ p {
   }
 
   .header h1 {
-    font-size: 30px;
+    /* margin-top: -40px; */
+    font-size: 34px;
   }
   .header img {
-    min-width: 50px;
+    width: 20%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .inputs .title,
   .inputs textarea {
-    width: 50%;
+    width: 60%;
   }
 
   .add_btn {
-    width: 20%;
+    width: 24.1%;
   }
 }
