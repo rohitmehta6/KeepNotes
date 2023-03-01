@@ -44,6 +44,7 @@ const CreateNote = () => {
         if (input.title === "") {
             alert('Pls Enter Title');
         }
+
         else if (btn === false) {
             const edit = notes.map((item, index) => {
                 if (index === itemToEdit) {
